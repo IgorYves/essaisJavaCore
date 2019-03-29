@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE properties SYSTEM "http://java.sun.com/dtd/properties.dtd">
+<properties>
+<comment>Tel kniga</comment>
+<entry key="Joe">01.25.69.89.36</entry>
+<entry key="Seb">06.15.20.33.44</entry>
+<entry key="Jim">02.58.45.63.25</entry>
+<entry key="Chris">09.15.42.86.36</entry>
+<entry key="Vero">01.45.69.85.25</entry>
+</properties>

@@ -1,0 +1,297 @@
+﻿<?xml version="1.0" encoding="UTF-8"  standalone="yes" ?>
+
+<!DOCTYPE tpXML2 [
+<!ELEMENT tpXML2 (poemes*, peintres*, locations*)>
+<!ELEMENT poemes (poeme*)>
+<!ELEMENT poeme (titre, auteur, dateCreation?, corp)>
+<!ELEMENT titre (#PCDATA)>
+<!ELEMENT auteur (prenom*, nom, dnaissance?, ddeces?, portretlink?)>
+<!ELEMENT prenom (#PCDATA)>
+<!ELEMENT nom (#PCDATA)>
+<!ELEMENT dnaissance (#PCDATA)>
+<!ELEMENT ddeces (#PCDATA)>
+<!ELEMENT portretlink (#PCDATA)>
+<!ELEMENT dateCreation (#PCDATA)>
+<!ELEMENT corp (strophe+)>
+<!ELEMENT strophe (ver+)>
+<!ELEMENT ver (#PCDATA)>
+
+<!ELEMENT peintres (peintre*)>
+<!ELEMENT peintre (auteur, famille, lieux*, biographie, oeuvres)>
+<!--  auteur deja definis  -->
+<!ELEMENT famille (#PCDATA)>
+<!ELEMENT lieux (lieu*)>
+<!ELEMENT lieu (#PCDATA)>
+<!ELEMENT biographie (#PCDATA)>
+<!ELEMENT oeuvres (oeuvrelink*)>
+<!ELEMENT oeuvrelink (#PCDATA)>
+
+<!ELEMENT locations (location*)>
+<!ELEMENT location (title, imagelink, dprice, description, equipement, localisation, dispo*, contact*)>
+<!ATTLIST location type (maison|gite|appartement|studio|immeuble|villa|chalet|chateau|hotel) "hotel">
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT imagelink (#PCDATA)>
+<!ELEMENT dprice (#PCDATA)>
+<!ATTLIST dprice currency (euro|dollar|livreGB) "euro">
+<!ELEMENT description (surface, totalCouchages, chambre*, sdb*, infogle)>
+<!ELEMENT surface (#PCDATA)>
+<!ATTLIST surface mesure (m2|pi2) "m2">
+<!ELEMENT totalCouchages (#PCDATA)>
+<!ELEMENT chambre (#PCDATA)>
+<!ELEMENT sdb (#PCDATA)>
+<!ELEMENT infogle (#PCDATA)>
+<!ELEMENT equipement (#PCDATA)>
+<!ELEMENT localisation (#PCDATA)>
+<!ELEMENT dispo (#PCDATA)>
+<!ELEMENT contact (#PCDATA)>
+]>
+
+<tpXML2>
+<!--  ****************** debut devoir 1 *******************  -->
+<!--  ********************* les poemes ********************  -->
+<poemes>
+	<poeme>
+		<titre>Le muguet de mai.</titre>
+		<auteur>
+			<prenom>Antoine</prenom>
+			<nom>Spinelli</nom>
+		</auteur>
+		<dateCreation>1802</dateCreation>
+		<corp>
+			<strophe>
+				<ver>De mon frère le lys des bois</ver>
+				<ver>Je n'ai pas le touchant emblème ;</ver>
+				<ver>Mais le gazon connaît ma voix</ver>
+				<ver>Et la brise me dit : « Je t'aime ! »</ver>
+			</strophe>
+			<strophe>
+				<ver>J'embaume les lieux où je croîs,</ver>
+				<ver>Et la rosée à mon front blême</ver>
+				<ver>Met des perles, — comme les rois</ver>
+				<ver>N'en ont jamais à leur diadème.</ver>
+			</strophe>
+			<strophe>
+				<ver>Aux premiers chants du rossignol,</ver>
+				<ver>Je laisse pour vous courir sur le sol</ver>
+				<ver>Mes petites clochettes blanches,</ver>
+			</strophe>
+			<strophe>
+				<ver>Qui disent à l'enfant rêveur :</ver>
+				<ver>« Les bourgeons étoilent les branches,</ver>
+				<ver>Voici le retour du bonheur. »</ver>
+			</strophe>
+			<strophe>
+				<ver>De moi à toi, qui suis-je ?</ver>
+				<ver>Le joli muguet du premier mai !</ver>
+			</strophe>
+		</corp>
+	</poeme>
+	<poeme>
+		<titre>Un sourire.</titre>
+		<auteur>
+			<prenom>Raoul</prenom>
+			<nom>Follereau</nom>
+		</auteur>
+		<dateCreation>1920</dateCreation>
+		<corp>
+			<strophe>
+				<ver>Un sourire ne coûte rien et produit beaucoup,</ver>
+				<ver>Il enrichit celui qui le reçoit sans appauvrir celui qui le donne,</ver>
+				<ver>Il ne dure qu'un instant, mais son souvenir est parfois éternel,</ver>
+				<ver>Personne n'est assez riche pour s'en passer,</ver>
+				<ver>Personne n'est assez pauvre pour ne pas le mériter,</ver>
+				<ver>Il crée le bonheur au foyer, soutient les affaires,</ver>
+				<ver>Il est le signe sensible de l'amitié,</ver>
+				<ver>Un sourire donne du repos à l'être fatigué,</ver>
+				<ver>Donne du courage au plus découragé</ver>
+				<ver>Il ne peut ni s'acheter, ni se prêter, ni se voler,</ver>
+				<ver>Car c'est une chose qui n'a de valeur qu'à partir du moment où il se donne.</ver>
+				<ver>Et si toutefois, vous rencontrez quelqu'un qui ne sait plus sourire,</ver>
+				<ver>Soyez généreux donnez-lui le vôtre,</ver>
+				<ver>Car nul n'a autant besoin d'un sourire</ver>
+				<ver>Que celui qui ne peut en donner aux autres.</ver>
+			</strophe>
+		</corp>
+	</poeme>
+	<poeme>
+		<titre>À ma Bretagne.</titre>
+		<auteur>
+			<prenom>Évariste</prenom>
+			<nom>Boulay-Paty</nom>
+		</auteur>
+		<dateCreation>1851</dateCreation>
+		<corp>
+			<strophe>
+				<ver>Jeune, je te quittai pour la gloire éphémère</ver>
+				<ver>Qui de Paris appelle avec un doigt moqueur,</ver>
+				<ver>Bretagne, où tout est bois, prés, ombrage et chœur ;</ver>
+				<ver>Puis la beauté sourit à ma jeunesse amère.</ver>
+			</strophe>
+			<strophe>
+				<ver>Dans la vie est un âge où la gloire est chimère,</ver>
+				<ver>Où le dernier amour s'efface enfin du cœur ;</ver>
+				<ver>Où l'amour du pays seul reste en nous vainqueur,</ver>
+				<ver>Où l'on pense aux tombeaux d'un père et d'une mère.</ver>
+			</strophe>
+			<strophe>
+				<ver>Oh ! comme alors, du monde échappé triomphant,</ver>
+				<ver>Vieillard rêvant aux lieux où je courais enfant,</ver>
+				<ver>Rajeunissant d'idée et l'âme encore ravie,</ver>
+			</strophe>
+			<strophe>
+				<ver>J'irai, les yeux en pleurs, baiser le sol natal,</ver>
+				<ver>Lui demander pardon de mon exil fatal,</ver>
+				<ver>Et finir l'existence où commença ma vie !</ver>
+			</strophe>
+		</corp>
+	</poeme>
+</poemes>
+<!--  ***************** fin devoir 1 *****************  -->
+
+<!--  ****************** debut devoir 2 *******************  -->
+<!--  ********************* les peintres ********************  -->
+<peintres>
+	<peintre>
+		<auteur>
+			<prenom>Claude</prenom>
+			<nom>MONET</nom>
+			<dnaissance>14 novembre 1840</dnaissance>
+			<ddeces>5 décembre 1926</ddeces>
+			<portretlink>http://www.impressionniste.net/monet.jpg</portretlink>
+		</auteur>
+		<famille>Impressionnisme</famille>
+		<lieux>
+			<lieu>Normandie</lieu>
+			<lieu>Pays-Bas</lieu>
+			<lieu>Argenteuil</lieu>
+			<lieu>Paris</lieu>
+			<lieu>Giverny</lieu>
+		</lieux>
+		<biographie>
+			Monet est reconnu comme étant l'un des créateurs de l'impressionnisme, le plus convaincu et le plus constant des peintres impressionnistes, en même temps que le chef de file du mouvement impressionniste.
+
+			Depuis ses débuts comme artiste, il fut encouragé à toujours écouter et transmettre ses perceptions, et toutes les critiques qu'il dut subir ne l'éloignèrent jamais de cette quête.
+
+			Claude Monet naquit à Paris le 14 Novembre 1840 mais toutes ses impressions d'enfant et d'adolescent sont liées à la ville du Havre où sa famille déménagea vers 1845. Son père y tenait un commerce d'articles coloniaux. 
+			
+			........
+		</biographie>
+		<oeuvres>
+			<oeuvrelink>http://www.impressionniste.net/monet_rue_honfleur.jpg</oeuvrelink>
+			<oeuvrelink>http://www.impressionniste.net/monet_sainte_adresse.jpg</oeuvrelink>
+			<oeuvrelink>http://www.impressionniste.net/monet_cathedrale_rouen.jpg</oeuvrelink>
+		</oeuvres>
+	</peintre>
+	<peintre>
+		<auteur>
+			<prenom>Gustave</prenom>
+			<nom>CAILLEBOTTE</nom>
+			<dnaissance>1848</dnaissance>
+			<ddeces>1894</ddeces>
+			<portretlink>http://www.impressionniste.net/caillebotte_palette.jpg</portretlink>
+		</auteur>
+		<famille>Impressionnisme</famille>
+		<lieux>
+			<lieu>Paris</lieu>
+			<lieu>Gennevilliers</lieu>
+		</lieux>
+		<biographie>
+			Gustave Caillebotte, dont les oeuvres personnelles furent, jusqu'à peu, oubliées, fut à la fois un peintre reconnu et un mécène généreux du mouvement impressionniste.
+
+			Il naquit en 1848 dans une famille très aisée qui batit sa fortune dans les textiles puis dans les biens immobiliers à l'occasion du redéveloppement du Paris du Baron Haussmann.
+
+			Ingénieur de profession, mais aussi ancien élève de l'Ecole des Beaux-Arts de Paris où il fut l'élève de Léon Bonnat, il rencontra Edgar Degas, Claude Monet, et Pierre Auguste Renoir dès 1874 et les aida à organiser la 1ère exposition des Impressionnistes à Paris cette même année.
+			
+			.......
+		</biographie>
+		<oeuvres>
+			<oeuvrelink>http://www.impressionniste.net/raboteurs_parquet.jpg</oeuvrelink>
+			<oeuvrelink>http://www.impressionniste.net/caillebotte09.jpg</oeuvrelink>
+			<oeuvrelink>http://www.impressionniste.net/caillebotte019.jpg</oeuvrelink>
+		</oeuvres>
+	</peintre>
+	<peintre>
+		<auteur>
+			<prenom>Paul</prenom>
+			<nom>GAUGUIN</nom>
+			<dnaissance>1848</dnaissance>
+			<ddeces>1903</ddeces>
+			<portretlink>http://www.impressionniste.net/gauguin.jpg</portretlink>
+		</auteur>
+		<famille>Impressionnisme</famille>
+		<lieux>
+			<lieu>Rouen</lieu>
+			<lieu>Martinique</lieu>
+			<lieu>Pont-Aven</lieu>
+			<lieu>Polynésie</lieu>
+		</lieux>
+		<biographie>
+			Paul GAUGUIN est né à Paris en 1848 dans une famille française de la moyenne bourgeoisie. Il était d'ascendance  hispano-péruvienne noble par sa mère, et sa famille, étiquetée "rouge" - son père travaillant au "National", l'organe du Parti Radical -, gagne le Pérou en 1849 pour échapper à la répression du "Parti de l'ordre".
+
+			Son père décède lors du voyage, et Paul reviendra à Paris six ans plus tard avec sa mère et sa soeur. De cette petite enfance en exil en Amérique Latine, il gardera toujours le goût du voyage et de l'exotisme.
+		</biographie>
+		<oeuvres>
+			<oeuvrelink>http://www.impressionniste.net/gauguin02.jpg</oeuvrelink>
+			<oeuvrelink>http://www.impressionniste.net/gauguin_vegetation_small.jpg</oeuvrelink>
+			<oeuvrelink>http://www.impressionniste.net/gauguin064.jpg</oeuvrelink>
+		</oeuvres>
+	</peintre>
+</peintres>
+<!--  ***************** fin devoir 2 *****************  -->
+
+<!--  ****************** debut devoir 3 *******************  -->
+<!--  ********************* les locations ********************  -->
+<locations>
+	<location type="gite">
+		<title>Normandie (Manche) GITE de CHARME, 160 m2, spacieux, confortable, jardin clos</title>
+		<imagelink>https://odis.homeaway.com/odis/listing/09bb44d2-3946-4c74-ad02-ac49daa003e0.c10.jpg</imagelink>
+		<dprice currency="euro">72</dprice>
+		<description>
+			<surface mesure="m2">160</surface>
+			<totalCouchages>6</totalCouchages>
+			<chambre>Grand lit double · Lit bébé</chambre>
+			<chambre>Extra Lg · Lit simple</chambre>
+			<chambre>Lit Double</chambre>
+			<sdb>WC &amp; Baignoire <![CDATA[&]]> Douche</sdb>
+			<infogle>
+				Idéal pour des vacances reposantes et profiter du charme d'une grande cheminée
+				Gite de l'Aunelle 
+				classé Gîtes de France 3 épis
+				classé Meublés de Tourisme 4° cat.
+				Maison de charme en pierre, nichée au coeur de la campagne normande, très spacieuse, à la décoration soignée, prestations de qualité. Garage et terrain planté entièrement clos. Idéal pour des vacances en famille, visiter la région.
+				.....
+			</infogle>
+		</description>
+		<equipement>
+			Internet, Animaux de compagnie bienvenus, Cheminée, Télévision, Satellite ou Câble, Lave-linge et sèche-linge, Enfants bienvenus, Parking, Non-fumeur, Chauffage
+		</equipement>
+		<localisation>
+			Guilberville, Normandie, France
+			Non loin de la mer, l'emplacement est idéal pour découvrir les richesses du département de la Manche au cœur de la Normandie : Mont Saint-Michel, Haras de Saint-Lô, Plages du débarquement, Saint-Malo, saut à l'élastique, bocage normand, îles anglo-normandes…
+		</localisation>
+	</location>
+	<location type="maison">
+		<title>PLAGE à 100 m, PRIX tout INCLUS, charges COMPRISES, jardin et parking privatif</title>
+		<imagelink>https://odis.homeaway.com/odis/listing/4210899d-e150-40a1-97dd-a6847ca38762.c10.jpg</imagelink>
+		<dprice currency="euro">44</dprice>
+		<description>
+			<surface mesure="m2">75</surface>
+			<totalCouchages>5</totalCouchages>
+			<chambre>Grand lit double</chambre>
+			<chambre>Lit simple (2) · Lit bébé</chambre>
+			<sdb>Douche, meuble lavabo avec miroir</sdb>
+			<infogle>
+				GRATUIT TOUTES LES CHARGES, EAU, ÉLECTRICITÉ, CHAUFFAGE SANS SUPPLÉMENT DE PRIX. TOUT EST COMPRIS DANS LE PRIX: Finies les « mauvaises surprises », vous profiterez à 100% de votre séjour chez nous car TOUT EST COMPRIS DANS LE PRIX
+			</infogle>
+		</description>
+		<equipement>
+			Internet Animaux de compagnie bienvenus Chauffage Satellite ou Câble Enfants bienvenus 
+		</equipement>
+		<localisation>
+			Barneville-Carteret, Normandie, France
+			A 100 mètres de la PLAGE, charmante villa les dauphins.
+		</localisation>
+	</location>
+</locations>
+<!--  ***************** fin devoir 3 *****************  -->
+</tpXML2>
